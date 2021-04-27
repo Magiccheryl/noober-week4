@@ -29,7 +29,7 @@ window.addEventListener('DOMContentLoaded', async function() {
     // Store number of passengers
     let numberOfPassengers = json[i].numberOfPassengers
       
-    // Set level of service with conditional statements (same logic as hw3)
+    // Set level of service with conditional statements (same logic as "hw3", so no detailed recipe about this logic here)
     let serviceRequested
     let borderStyling
     if (json[i].purpleRequested==true) {
@@ -42,11 +42,11 @@ window.addEventListener('DOMContentLoaded', async function() {
       borderStyling=`border-black`
     } else {
       serviceRequested=`Noober X`
-      // (for fun) Give each level of service a different visual look – a grey border for Noober X
+      // (for fun) Give each level of service a different visual look – a light grey border for Noober X
       borderStyling=`border-gray-300`
     }
 
-    //Set the condition: if there is only one passenger, set to "passenger", else set to "passengers"
+    //Set description with conditional statements: if there is only one passenger, set to "passenger"; else, set to "passengers"
     let passengerChange
     if (numberOfPassengers == 1){
       passengerChange = `passenger`
